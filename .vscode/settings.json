@@ -1,0 +1,6 @@
+{
+    "prettier.eslintIntegration": true,
+    "editor.codeLens": true,
+    "editor.formatOnSave": true,
+    "eslint.enable": true
+}

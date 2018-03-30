@@ -1,0 +1,17 @@
+{
+  "extends": ["airbnb", "prettier"],
+  "parser": "babel-eslint",
+  "rules": {
+    "semi": ["error", "never"],
+    "no-console": "off",
+    "react/jsx-filename-extension": "off",
+    "jsx-a11y/anchor-is-valid": "off"
+  },
+  "env": {
+    "browser": true
+  },
+  "globals": {
+    "React": true,
+    "ReactDOM": true
+  }
+}
