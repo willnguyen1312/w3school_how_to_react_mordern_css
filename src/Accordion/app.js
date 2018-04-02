@@ -4,7 +4,7 @@ const { render } = ReactDOM
 const Panel = ({ section, open, handleClick }) => (
   <Fragment>
     <button
-      onClick={() => handleClick(section)}
+      onClick={e => handleClick(e, section)}
       className={`accordion ${open ? "active" : ""}`}
     >
       Section {section}
@@ -37,7 +37,7 @@ class App extends Component {
     data
   }
 
-  handleClick = id => {
+  handleClick = (e, id) => {
     const newData = this.state.data.map(x => Object.assign({}, x))
     const foundIndex = newData.findIndex(x => x.id === id)
     newData[foundIndex].open = !newData[foundIndex].open
